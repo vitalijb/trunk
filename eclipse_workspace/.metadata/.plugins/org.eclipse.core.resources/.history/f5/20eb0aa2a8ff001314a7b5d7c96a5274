@@ -2,6 +2,7 @@ package com.hexlet;
 
 import java.io.IOException;
 
+import com.hexlet.lesson4.*;
 import com.hexlet.lesson5.Field;
 
 public class Main {
