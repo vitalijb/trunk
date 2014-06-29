@@ -1,0 +1,15 @@
+package com.msquare;
+
+import java.util.Scanner;
+
+public class ReadFromInput {
+	
+	public String readPrintInput() {
+	
+		Scanner scan= new Scanner(System.in);
+		System.out.print("Enter a number: ");
+		String input = scan.nextLine();
+		System.out.println(input);
+		return input;
+	}
+}

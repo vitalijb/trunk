@@ -1,0 +1,30 @@
+package com.msquare;
+
+import java.util.Scanner;
+
+public class ReadFromInput {
+	
+	public static boolean isInteger(String s) {
+	    try { 
+	        Integer.parseInt(s); 
+	    } catch(NumberFormatException e) { 
+	        return false; 
+	    }
+	    // only got here if we didn't return false
+	    return true;
+	}
+	
+	public int readPrintInput() {
+	
+		Scanner scan= new Scanner(System.in);
+		System.out.print("Enter a number: ");		
+		int input = Integer.parseInt(scan.nextLine());
+		if (input > 0 && input <= 10) {
+			System.out.println(input);
+			return input;
+			} else {
+			System.out.println("Error. Allowable values: 1-10");
+			return 1;
+		}
+	}
+}

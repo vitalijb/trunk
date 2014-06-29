@@ -1,0 +1,13 @@
+package com.msquare;
+
+public class Main {
+
+	public static void main(String[] args) {
+		CreateTable table = new CreateTable(12);
+		table.eraseFields();
+		table.showTable();
+		ReadFromInput readPrint = new ReadFromInput();
+		readPrint.readPrintInput();
+	}
+
+}

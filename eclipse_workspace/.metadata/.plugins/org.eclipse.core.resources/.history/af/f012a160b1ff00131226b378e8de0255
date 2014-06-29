@@ -1,0 +1,21 @@
+package com.msquare;
+
+import java.util.Scanner;
+
+public class ReadFromInput {
+	
+	public int readPrintInput() {
+	
+		Scanner scan= new Scanner(System.in);
+		System.out.print("Enter a number: ");
+		int input = scan.nextInt();
+		if (input > 0 && input <= 10) {
+			System.out.println(input);
+			return input;
+		} else {
+			System.out.println("Allowed values: 1-10");
+			return 1;
+		}
+
+	}
+}

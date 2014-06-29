@@ -1,0 +1,14 @@
+package com.msquare;
+
+import java.util.Scanner;
+
+public class ReadFromInput {
+	
+	
+
+	Scanner scan= new Scanner(System.in);
+
+	int num= scan.nextInt();
+
+	System.out.println(num);
+}
