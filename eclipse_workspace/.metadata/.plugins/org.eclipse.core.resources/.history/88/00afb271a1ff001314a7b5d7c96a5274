@@ -1,0 +1,65 @@
+package com.hexlet.lesson5;
+
+public class Field {
+	
+	
+	private static final char DEFAULT_CELL_VALUE = ' ';
+	
+	private static final char MAX_FIELD_SIZE = ' ';
+	
+	private static final char MIN_FIELD_SIZE = ' ';
+	
+	private int fieldSize = 3;
+	
+	private char[][] field = new char[fieldSize][fieldSize];	
+	
+	
+	
+	public int getFieldSize() {
+		return fieldSize;
+	}
+
+
+	public void setFieldSize(int newFieldSize) {
+		if (newFieldSize > MIN_FIELD_SIZE && newFieldSize < MAX_FIELD_SIZE) {
+			fieldSize = newFieldSize;
+		}
+	}
+
+
+	public void eraseField() {
+		for (int i = 0; i < fieldSize; i++) {
+			eraseLine(i);
+		}
+	}
+	
+	
+	public void eraseLine(int lineNumber) {
+		for (int i = 0; i < fieldSize; i++) {
+			field[i][lineNumber] = DEFAULT_CELL_VALUE;
+		}
+	}
+	
+	
+	public void showField() {
+		System.out.println();
+		for (int i = 0; i < fieldSize; i++) {
+			showLine(i);
+			System.out.println();
+		}
+		System.out.println();
+	}
+	
+
+	private void showLine(int lineNumber) {
+		for  (int i = 0; i < fieldSize; i++) {
+			showCell(i,lineNumber);
+		}
+	}
+	
+	
+	private void showCell(int x, int y) {
+		System.out.print("[" + field[x][y] + "]");
+	}
+	
+}

@@ -3,3 +3,5 @@
 1404039841107	Rename field 'maxAge'
 1404039856573	Rename field 'minNameLenght'
 1404040759519	Rename field 'items'
+1404054809317	Move compilation unit
+1404055032064	Rename field 'FIELD_SIZE'

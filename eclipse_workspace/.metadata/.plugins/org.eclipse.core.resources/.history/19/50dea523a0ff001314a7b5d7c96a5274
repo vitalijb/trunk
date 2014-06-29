@@ -11,12 +11,6 @@ public class Main {
 	
 		Field field = new Field();
 		field.eraseField();
-//		field.setFieldSize(10);
-		field.showField();
-		
-		field = new Field(12);
-		field.eraseField();
-//		field.setFieldSize(10);
 		field.showField();
 		
 	}
