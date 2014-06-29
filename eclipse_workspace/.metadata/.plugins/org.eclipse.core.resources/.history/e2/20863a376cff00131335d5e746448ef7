@@ -1,0 +1,16 @@
+package com.hexlet;
+
+import java.io.IOException;
+
+import com.hexlet.common.Course;
+import com.hexlet.humans.Student;
+import com.hexlet.lesson4.*;
+
+public class Main {
+
+	public static void main(String[] args) throws IOException {
+		Human human = new Human();
+		human.getName();
+	}
+
+}

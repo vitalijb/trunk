@@ -1,0 +1,13 @@
+import java.io.IOException;
+
+public class Main {
+
+	public static void main(String[] args) throws IOException {
+		Student studentMax = new Student();
+		studentMax.course.name = "Java course";
+		studentMax.name = "Max";
+		studentMax.sayHello();
+		//System.out.println(studentMax.course);
+	}
+
+}

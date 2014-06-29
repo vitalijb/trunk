@@ -1,0 +1,15 @@
+package com.hexlet;
+
+import java.io.IOException;
+
+import com.hexlet.lesson4.*;
+
+public class Main {
+
+	public static void main(String[] args) throws IOException {
+		human.name = "FG";
+		Human human = new Human();
+		System.out.println(human.getName());
+	}
+
+}

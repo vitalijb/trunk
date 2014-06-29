@@ -1,0 +1,25 @@
+package com.hexlet.lesson4;
+
+public class Human {
+	public String name;
+	
+	public int age;
+	
+	public void setAge(int newAge) {
+		if (newAge > 0 && newAge < 120)  {
+			age = newAge;
+		}
+	}
+	
+	public int getAge() { 
+		return age;
+	}
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String newName) {
+		name = newName;
+	}
+}
