@@ -1,3 +1,2 @@
 INDEX VERSION 1.126+/home/vitalij/Documents/git/eclipse_workspace/.metadata/.plugins/org.eclipse.jdt.core
-83653881.index
 3726751674.index
