@@ -1,0 +1,15 @@
+package com.hexlet.lesson4;
+
+public class Field {
+	
+	public char[] field = new char[3];	
+	
+	public void showField() {
+		System.out.println();
+		System.out.print("[" + field[0] + "]");
+		System.out.print("[" + field[1] + "]");
+		System.out.print("[" + field[2] + "]");
+		System.out.println();
+	}
+
+}

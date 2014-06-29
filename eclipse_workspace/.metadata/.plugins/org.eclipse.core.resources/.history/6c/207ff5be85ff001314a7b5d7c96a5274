@@ -1,0 +1,25 @@
+package com.hexlet.lesson4;
+
+public class Field {
+	
+	private static final int FIELD_SIZE = 3;
+	
+	private char[][] field = new char[FIELD_SIZE][FIELD_SIZE];	
+	
+	public void eraseField() {
+		for (int i = 0; i < FIELD_SIZE; i++) {
+			field[i][i] = ' ';
+		}
+	}
+	
+	public void showField() {
+		for (int i = 0; i < FIELD_SIZE; i++) {
+			showCell(i);
+		}
+	}
+
+	private void showCell(int i) {
+		System.out.print("[" + field[1] + "]");
+	}
+	
+}

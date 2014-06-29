@@ -1,0 +1,22 @@
+package com.hexlet;
+
+import java.io.IOException;
+
+import com.hexlet.lesson4.*;
+
+public class Main {
+
+	public static void main(String[] args) throws IOException {
+	
+		ExampleStaticFieldClass exampleStaticFieldClass = new ExampleStaticFieldClass();
+		exampleStaticFieldClass.nonStaticField = 4;
+		
+		//ExampleStaticFieldClass exampleStaticFieldClass2 = new ExampleStaticFieldClass();
+		//exampleStaticFieldClass.nonStaticField = 5;
+		
+		System.out.println(exampleStaticFieldClass.nonStaticField);
+		//System.out.println(exampleStaticFieldClass2.nonStaticField);
+		
+	}
+
+}
